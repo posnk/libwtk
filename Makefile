@@ -59,7 +59,7 @@ $(BUILDDIR)$(PROGNAME): $(OBJS)
 
 install: $(BUILDDIR)$(PROGNAME)
 	cp $(BUILDDIR)$(PROGNAME) $(DESTDIR)$(PROGPATH)
-	cp include/* $(DESTDIR)/usr/include/	
+	cp -r include/* $(DESTDIR)/usr/include/	
 
 .PHONY: depend clean
 
